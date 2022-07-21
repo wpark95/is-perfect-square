@@ -10,7 +10,7 @@ nav_order: 3
 {:.no_toc}
 
 <details markdown="block">
-  <summary>Contents</summary>
+  <summary>Page contents</summary>
 * TOC
 {:toc}
 </details>
@@ -30,7 +30,7 @@ Use JUnit5 to verify your code with the inputs and expected outputs below. (Note
 |            `4_097` | `false` | _N/A_ |
 |               `-1` | _N/A_ | `java.lang.IllegalArgumentException` |
 
-Additional test cases may be used by the automated tests; an implementation that follows the [specifications](implementation.md#specifications) stated previously will pass all such additional tests.
+Additional test cases may be used by the automated tests; an implementation that conforms to the [specifications](implementation.md#specifications) stated previously will pass all such additional tests.
  
 ## Tips
 
@@ -40,4 +40,4 @@ Additional test cases may be used by the automated tests; an implementation that
 
 3. On the other hand, `Long.parseLong` cannot handle the `L` suffix (or any other numeric type suffix); nor can it handle an underscore character (`_`) used as a digit group character. Thus, if reading and parsing data from a file or from user input at runtime, directly or indirectly (e.g. using JUnit5's `@CsvFileSource`), type suffixes and digit group separators should be avoided or stripped out. 
 
-4. The JUnit5 `assertThrows` method may be used to verify that a method throws an expected exception under specific conditions. For more information, see the [Javadocs documentation for the `assertThrows(Class, Executable)` method](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html#assertThrows(java.lang.Class,org.junit.jupiter.api.function.Executable)).
+4. The JUnit5 `assertThrows` method may be used to verify that a method throws an expected exception under specific conditions. For more information, see the [Javadocs documentation for the `assertThrows(Class, Executable)` method](https://junit.org/junit5/docs/current/api/org.junit.jupiter.api/org/junit/jupiter/api/Assertions.html#assertThrows(java.lang.Class,org.junit.jupiter.api.function.Executable)){:target='_blank'}.
