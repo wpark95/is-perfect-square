@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"com.tlglearning","c":"Square","l":"isPerfectSquare(long)"}]
