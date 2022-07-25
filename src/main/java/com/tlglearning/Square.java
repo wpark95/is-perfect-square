@@ -26,8 +26,13 @@ public final class Square {
     if (input < 0) {
       throw new IllegalArgumentException();
     }
+    boolean result = false;
+    double squareRoot = Math.sqrt(input);
 
-    throw new UnsupportedOperationException("Not yet implemented"); // TODO Replace with implementation.
+    if (Math.pow(squareRoot, 2) == input) {
+      result = true;
+    }
+    return result;
   }
 
 }
