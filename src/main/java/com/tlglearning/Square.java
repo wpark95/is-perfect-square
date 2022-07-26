@@ -28,8 +28,9 @@ public final class Square {
     }
     boolean result = false;
     double squareRoot = Math.sqrt(input);
+    long nearestSqrt = Math.round(squareRoot);
 
-    if (Math.pow(squareRoot, 2) == input) {
+    if (nearestSqrt * nearestSqrt == input) {
       result = true;
     }
     return result;
